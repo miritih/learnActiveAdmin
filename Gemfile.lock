@@ -254,7 +254,7 @@ DEPENDENCIES
   draper
   jbuilder (~> 2.0)
   jquery-rails
-  omniauth-google-oauth2 (~> 0.2.1)
+  omniauth-google-oauth2
   pundit
   rails (= 4.2.5)
   sass-rails (~> 5.0)

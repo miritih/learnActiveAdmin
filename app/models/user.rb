@@ -1,7 +1,6 @@
 class User < ActiveRecord::Base
-    
+   validates :hd, presence: true
   def self.from_omniauth(auth)
-      
     where(provider: auth.provider, uid: auth.uid).first_or_initialize.tap do |user|
       user.provider = auth.provider
       user.uid = auth.uid
@@ -11,11 +10,10 @@ class User < ActiveRecord::Base
       user.oauth_refresh_token = auth.credentials.refresh_token if auth.credentials.refresh_token
       user.oauth_token = auth.credentials.token
       user.oauth_expires_at = Time.at(auth.credentials.expires_at)
-      
+      user.hd = auth.extra.id_info.hd
+      if user.hd != nil
+        user.save! 
+      end
     end
-    return  auth.raw_info
   end
-
-   
-
 end
