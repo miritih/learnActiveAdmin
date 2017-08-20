@@ -15,6 +15,10 @@ gem "omniauth-google-oauth2"
 #Active admin gem
 gem 'activeadmin'
 
+#active admin theme 
+#gem 'arctic_admin'
+
+
 # Plus integrations with:
 gem 'devise'
 gem 'cancan' # or cancancan
