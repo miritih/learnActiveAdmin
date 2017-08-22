@@ -1,10 +1,10 @@
 development:
-  GMAIL_USERNAME: 'ericmwenda5@gmail.com'
+  GMAIL_USERNAME: 'ericmwenda254@gmail.com'
   GMAIL_PASSWORD: 'Technology5'
   DATABASE_USER: database user
   DATABASE_PASSWORD: password for your database 
 test:
-  GMAIL_USERNAME: 'ericmwenda5@gmail.com'
+  GMAIL_USERNAME: 'ericmwenda254@gmail.com'
   GMAIL_PASSWORD: 'Technology5'
   DATABASE_USER: database user
   DATABASE_PASSWORD: password for your database 
